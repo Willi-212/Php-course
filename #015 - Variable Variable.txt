@@ -1,0 +1,26 @@
+<?php
+
+
+    /*
+        Variable Variable
+        Takes The Value Of A Variable and treats that as the name of a variable
+    */
+
+    $a= "youness";
+    $$a = "Leo";
+    $$$a = "Fury";
+
+    echo $a;
+    echo "<br>";
+    echo $$a;
+    echo "<br>";
+    echo $youness;
+    echo "<br>";
+    echo $$$a;
+    echo "<br>";
+    echo $Leo;
+    echo "<br>";
+
+    echo "Hello ${$a}"; // $$a
+    echo '<br>';
+    echo "Hello ${$$a}"; // $$$a
