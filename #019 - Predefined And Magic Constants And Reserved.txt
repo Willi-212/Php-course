@@ -1,0 +1,64 @@
+<?php
+
+/*
+    Pre-Defined Constants [Case Sensitive]
+    - PHP_VERSION
+    - PHP_OS_FAMILY
+    - PHP_INT_MAX
+    - DEFAULT_INCLUDE_PATH
+
+    Magic Constants [Case Insensitive]
+    - __LINE__
+    - __FILE__
+    - __DIR__
+
+    Reserved Keywords
+    - break
+    - clone
+
+    Search
+    - PHP Predefined Constants
+    - Compile Time vs Runtime
+    - List of Reserved Words
+*/
+
+echo php_uname();
+echo '<br>';
+echo PHP_VERSION;
+echo '<br>';
+echo __LINE__;
+echo '<br>';
+echo __FILE__;
+echo '<br>';
+echo __DIR__;
+
+define("breaks", "AA");
+echo '<br>';
+echo breaks;
+
+
+// Normal
+function normal() {
+    return "Hello";
+}
+echo '<br>';
+echo normal();
+
+// error reserved keyword
+function clone() {
+    return "Anything";
+}
+
+echo clone();
+
+
+
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
